@@ -50,7 +50,7 @@ h6 {
 
 button {
   background: none;
-  border: none;
+  /* border: none; */
   cursor: pointer;
 }
 
@@ -123,7 +123,7 @@ ul {
   background-color: #ffffff00;
 }
 
-.menu {
+#navbar .menu {
   background-color: #ffffff;
   position: relative;
   width: 1360px;
@@ -134,13 +134,20 @@ ul {
   justify-content: space-evenly;
 }
 
-.menu img {
+#navbar .menu .logo {
+  width: 180px;
+  height: 180px;
+  background-image: url("./src/assets/images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  object-position: center;
+  object-fit: cover;
   position: absolute;
   left: 10px;
   top: -62px;
 }
 
-.menu ul {
+#navbar .menu ul {
   width: 100%;
   padding-left: 300px;
   display: flex;
@@ -149,6 +156,7 @@ ul {
   justify-content: space-between;
   font-size: 14px;
   font-family: var(--font-sans);
+  font-weight: bold;
   color: #002868;
 }
 
@@ -180,9 +188,77 @@ ul {
   width: 500px;
   height: 500px;
   position: relative;
-  top: 34%;
+  top: 23%;
   left: 33%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-sans);
+  /* padding: 30px; */
+  gap: 2rem;
+  color: #ffffff;
+}
+
+.circle .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+.circle h2 {
+  font-size: 24px;
+}
+.circle p {
+  padding: 0 50px;
+  text-align: center;
+  font-size: 16px;
+}
+.circle button {
+  width: 200px;
+  height: 50px;
+  border: #ffffff 1px solid;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.apografi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url("./assets/images/apografi.png");
+  height: 744px;
+}
+
+.apografi h1 {
+  font-family: var(--font-sans);
+  color: #bf0a30;
+  font-size: 48px;
+}
+
+.erga {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 650px;
+  background-color: #002868;
+}
+
+.form-container {
+  background-color: #ffffff;
+}
+
+.footer {
+  width: 100%;
+  height: 442px;
+  background-color: #002868;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
