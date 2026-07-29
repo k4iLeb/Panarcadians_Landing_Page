@@ -98,6 +98,7 @@ ul {
   --font-sans: "SourceSansPro", system-ui, -apple-system, sans-serif;
   --font-prox: "ProximaNova", system-ui, -apple-system, sans-serif;
   --color-blue: #002868;
+  --color-red: #bf0a30;
 }
 
 #app {
@@ -129,7 +130,7 @@ ul {
   justify-content: start;
   font-family: var(--font-sans);
   gap: 1rem;
-  margin: 10px 100px 10px 10px;
+  margin: 10px 95px 10px 10px;
   align-self: end;
 }
 
@@ -175,6 +176,7 @@ ul {
   flex-direction: row;
   align-items: center;
   gap: 5px;
+  margin-right: 25px;
 }
 
 .top-menu .language {
@@ -185,18 +187,32 @@ ul {
 #navbar .menu {
   background-color: #ffffff;
   border-radius: 5px;
-  position: relative;
+  position: absolute;
+  top: 4.2rem;
   width: 1360px;
   height: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  -webkit-mask-image: radial-gradient(
+    circle 99px at 140px 30px,
+    transparent 99%,
+    #000 100%
+  );
+  mask-image: radial-gradient(
+    circle 99px at 140px 30px,
+    transparent 99%,
+    #000 100%
+  );
 }
 
-#navbar .menu .logo {
+#navbar .logo {
   position: absolute;
-  left: 10px;
-  top: -92px;
+  width: 180px;
+  height: 180px;
+  left: 100px;
+  top: 7px;
 }
 
 #navbar .menu-list {
@@ -219,7 +235,7 @@ ul {
 .signature {
   position: absolute;
   top: 140px;
-  left: 290px;
+  left: 286px;
   display: flex;
   flex-direction: column;
   width: 262px;
@@ -289,7 +305,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 1rem;
   width: 100%;
   background-image: url("./assets/images/apografi.png");
@@ -348,6 +364,41 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+}
+
+.apografi li {
+  padding-left: 1rem;
+  position: relative;
+}
+
+.apografi li::before {
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  content: url("./assets/images/list.svg");
+}
+
+.apografi .date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apografi .date h3,
+.apografi .date h2 {
+  color: var(--color-blue);
+  font-family: var(--font-sans);
+  font-weight: bold;
+}
+.apografi .date h3:first-child {
+  color: var(--color-red);
+}
+
+.apografi .date h3 {
+  font-size: 18px;
+}
+.apografi .date h2 {
+  font-size: 34px;
 }
 
 .erga {
@@ -413,12 +464,13 @@ ul {
 
 .footer {
   width: 100%;
-  height: 442px;
+  height: 420px;
   background-color: var(--color-blue);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1.5rem;
   position: relative;
 }
 
@@ -426,4 +478,57 @@ ul {
   position: absolute;
   top: -20px;
   right: 100px;
+}
+
+#to-top:hover {
+  cursor: pointer;
+}
+
+.footer .paf {
+  width: 262px;
+  height: 23px;
+}
+
+.footer .socials {
+  width: 320px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer .menu {
+  width: 1101px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-sans);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer .copyright {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  opacity: 0.5;
+  font-weight: lighter;
+  letter-spacing: 0.6px;
+}
+
+/*** HOVERS ***/
+.top-menu .login:hover {
+  color: var(--color-red);
+  cursor: pointer;
+}
+
+.top-menu .language:hover {
+  cursor: pointer;
+}
+
+.menu a:hover {
+  color: var(--color-red);
 }
