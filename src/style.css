@@ -66,7 +66,7 @@ ul {
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("./assets/fonts/ProximaNova-Regular.otf") format("opentype");
+  src: url("/src/assets/fonts/ProximaNova-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -74,21 +74,21 @@ ul {
 
 @font-face {
   font-family: "ProximaNova";
-  src: url("./assets/fonts/ProximaNova-Bold.otf") format("opentype");
+  src: url("/src/assets/fonts/ProximaNova-Bold.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SourceSansPro";
-  src: url("./assets/fonts/SourceSansPro-Regular.ttf") format("truetype");
+  src: url("/src/assets/fonts/SourceSansPro-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "SourceSansPro";
-  src: url("./assets/fonts/SourceSansPro-Bold.ttf") format("truetype");
+  src: url("/src/assets/fonts/SourceSansPro-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -248,13 +248,13 @@ ul {
   width: 100%;
   height: 750px;
   background-image:
-    url("./assets/images/Left.png"), url("./assets/images/Right.png");
+    url("/src/assets/images/Left.png"), url("/src/assets/images/Right.png");
   background-repeat: no-repeat, no-repeat;
   background-position: left, right;
 }
 
 .circle {
-  background-image: url("./assets/images/circle.png");
+  background-image: url("/src/assets/images/circle.png");
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
@@ -310,7 +310,7 @@ ul {
   justify-content: center;
   gap: 2rem;
   width: 100%;
-  background-image: url("./assets/images/apografi.png");
+  background-image: url("/src/assets/images/apografi.png");
   height: 744px;
 }
 
@@ -377,7 +377,7 @@ ul {
   position: absolute;
   left: 0px;
   top: 2px;
-  content: url("./assets/images/list.svg");
+  content: url("/src/assets/images/list.svg");
 }
 
 .apografi .date {
