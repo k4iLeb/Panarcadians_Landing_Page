@@ -1,1 +1,6 @@
-import "/src/style.css";
+// import { defineConfig } from "vite";
+import "./style.css";
+
+export default defineConfig({
+  base: "./",
+});
