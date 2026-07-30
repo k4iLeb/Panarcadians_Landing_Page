@@ -244,6 +244,11 @@ ul {
   z-index: 2;
   border-radius: 4px;
   padding: 20px;
+
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s ease;
+  transition-delay: 0.2s;
 }
 
 .dropdown {
@@ -666,7 +671,13 @@ fieldset {
   border: var(--color-red);
 }
 
-.show {
+/* .show {
   visibility: visible !important;
   opacity: 1 !important;
+} */
+
+#navbar:has(.menu-list li:first-child:hover) .dropdown,
+#navbar .dropdown:hover {
+  visibility: visible;
+  opacity: 1;
 }
